@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.6](https://github.com/shm-open/code-push-server/compare/v2.1.5...v2.1.6) (2022-07-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency aws-sdk to v2.1176.0 ([eb3c14a](https://github.com/shm-open/code-push-server/commit/eb3c14abcc8b673f485088f1b8684504a34b60ac))
+* **deps:** update dependency cos-nodejs-sdk-v5 to v2.11.12 ([fa00c74](https://github.com/shm-open/code-push-server/commit/fa00c74cf951278ec547c00d0ed713b40a2710d3))
+* **deps:** update dependency express to v4.18.1 ([2adad28](https://github.com/shm-open/code-push-server/commit/2adad280d937fd9176cdc4a5f20547f9ecd88288))
+* **deps:** update dependency helmet to v5.1.0 ([aefde36](https://github.com/shm-open/code-push-server/commit/aefde366d6eb98ea401214709051ebab5b6f9ecc))
+* **deps:** update dependency i18n to v0.15.0 ([7cc216c](https://github.com/shm-open/code-push-server/commit/7cc216ce5eb88ab4ff299671547f5c39c1ea146a))
+* **deps:** update dependency nodemailer to v6.7.7 ([85ad522](https://github.com/shm-open/code-push-server/commit/85ad522d5b4cb31f57cf2b9bca35d9d64d35e45d))
+* **deps:** update dependency qiniu to v7.7.0 ([732a4ed](https://github.com/shm-open/code-push-server/commit/732a4ed6e82d2047b6df91ff004fc482aaffab6b))
+* **deps:** update dependency redis to v4.2.0 ([5a744c6](https://github.com/shm-open/code-push-server/commit/5a744c6ea111e74a834307131bf0a8a5dbecb137))
+* **deps:** update dependency sequelize to v6.21.3 ([7462594](https://github.com/shm-open/code-push-server/commit/746259467957a79b77d1ea1da69f9af5915b56b1))
+* **deps:** update dependency yargs to v17.5.1 ([fd9f58e](https://github.com/shm-open/code-push-server/commit/fd9f58e580e516cb188b4bea8da3eeb837bacae6))
+
 ### [2.1.5](https://github.com/shm-open/code-push-server/compare/v2.1.4...v2.1.5) (2022-04-26)
 
 ### [2.1.4](https://github.com/shm-open/code-push-server/compare/v2.1.3...v2.1.4) (2022-04-26)
