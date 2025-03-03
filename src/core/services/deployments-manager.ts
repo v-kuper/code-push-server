@@ -174,6 +174,7 @@ class DeploymentsManager {
     listDeloyments(appId: number) {
         return Deployments.findAll({ where: { appid: appId } }).then((deploymentsInfos) => {
             if (_.isEmpty(deploymentsInfos)) {
+                console.error(`No deployments found for app ${appId}`);
                 return [];
             }
             return Promise.all(
@@ -185,6 +186,7 @@ class DeploymentsManager {
     }
 
     listDeloyment(deploymentInfo) {
+        console.log('DEBUG: Found deploymentInfo:', deploymentInfo);
         return this.findDeloymentsPackages([deploymentInfo.last_deployment_version_id])
             .then(this.formatPackage)
             .then((packageInfo) => {
