@@ -102,7 +102,8 @@ export function checkToken(req: Req, res: Res, next: NextFunction) {
     // get token and type
     let authType: 1 | 2 = 1;
     let authToken = '';
-    const authArr = _.split(req.get('Authorization'), ' ');
+    const authHeader = req.get('Authorization') || '';
+    const authArr = _.split(authHeader, ' ');
     if (authArr[0] === 'Bearer') {
         [, authToken] = authArr; // Bearer
         if (authToken && authToken.length > 64) {
@@ -124,7 +125,8 @@ export function checkToken(req: Req, res: Res, next: NextFunction) {
     } else if (authToken && authType === 2) {
         checkTokenResult = checkAccessToken(authToken);
     } else {
-        res.send(new Unauthorized(`Auth type not supported.`));
+        const err = new Unauthorized(`Auth type not supported.`);
+        res.status(err.status).send(err.message);
         return;
     }
 
