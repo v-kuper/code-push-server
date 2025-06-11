@@ -13,6 +13,7 @@ import { accessKeysRouter } from './routes/accessKeys';
 import { accountRouter } from './routes/account';
 import { appsRouter } from './routes/apps';
 import { authRouter } from './routes/auth';
+import { apiAuthRouter } from './routes/apiAuth';
 import { indexRouter } from './routes/index';
 import { indexV1Router } from './routes/indexV1';
 import { usersRouter } from './routes/users';
@@ -85,6 +86,7 @@ app.use('/v0.1/public/codepush', indexV1Router);
 app.use('/accessKeys', accessKeysRouter);
 app.use('/apps', appsRouter);
 app.use('/account', accountRouter);
+app.use('/api/auth', apiAuthRouter);
 // code-push-server routes
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);

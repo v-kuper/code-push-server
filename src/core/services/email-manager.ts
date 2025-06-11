@@ -40,6 +40,22 @@ class EmailManager {
             html: `<div>您接收的验证码为: <em style="color:red;">${code}</em>  20分钟内有效</div>`,
         });
     }
+
+    sendVerifyEmail(email: string, token: string) {
+        return this.sendMail({
+            to: email,
+            subject: 'Verify your email',
+            html: `<div>Please verify your email using this token: <em>${token}</em></div>`,
+        });
+    }
+
+    sendResetPasswordMail(email: string, token: string) {
+        return this.sendMail({
+            to: email,
+            subject: 'Reset Password',
+            html: `<div>Reset your password using this token: <em>${token}</em></div>`,
+        });
+    }
 }
 
 export const emailManager = new EmailManager();
