@@ -12,5 +12,9 @@
   "new password": "新密码",
   "please login again": "请重新登录",
   "change success": "修改成功",
-  "Logout": "登出"
+  "Logout": "登出",
+  "registered": "注册成功",
+  "email verified": "邮箱已验证",
+  "email sent": "邮件已发送",
+  "password reset": "密码已重置"
 }

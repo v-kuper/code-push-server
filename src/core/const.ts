@@ -32,4 +32,4 @@ export const RELEASE_METHOD_UPLOAD = 'Upload';
 
 export const DIFF_MANIFEST_FILE_NAME = 'hotcodepush.json';
 
-export const CURRENT_DB_VERSION = '0.5.0';
+export const CURRENT_DB_VERSION = '0.6.0';

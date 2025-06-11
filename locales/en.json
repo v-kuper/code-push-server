@@ -13,5 +13,9 @@
 	"please login again": "please login again",
 	"change success": "change success",
 	"Logout": "Logout",
-	"Register": "Register"
+        "Register": "Register",
+        "registered": "registered",
+        "email verified": "email verified",
+        "email sent": "email sent",
+        "password reset": "password reset"
 }
